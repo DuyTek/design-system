@@ -23,6 +23,11 @@ npm run dev          # demo app at http://localhost:5173
 npm run storybook    # Storybook at http://localhost:6006
 ```
 
+<img src="docs/assets/storybook-logo.jpeg" alt="Storybook" width="60" />
+
+Stories for every component live alongside their source under
+`src/components/**/*.stories.tsx` and are served by Storybook.
+
 ## Tech stack
 
 React 18, MUI 7, Emotion, Vite 6, Storybook 10, FontAwesome (free icons).
