@@ -95,7 +95,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         startIcon={startIcon}
         variant={variant}
         size={size}
+        aria-busy={props.loading ? true : undefined}
         {...props}
+        // Loading is always start-positioned so the label stays readable.
+        // Placed after the spread so callers cannot override it.
+        loadingPosition="start"
       />
     );
   },
